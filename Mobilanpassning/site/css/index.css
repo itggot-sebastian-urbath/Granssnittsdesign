@@ -10,21 +10,36 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     grid-row-gap:10px;
-    grid-column-gap: 16px;
+    grid-column-gap: 0px;
     background-color: powderblue;
 }
 
-
-.header {
-    grid-column: span 12;
-    grid-row: span 1;
-    background-color:whitesmoke;
+.nav {
+    grid-column: span 1;
+    grid-row: span 12;
+    background-color: beige;
 
 }
 
+.menu {
+    width: 40vw;
+    height: 100vh;
+    background-color:white ;
+    display: none  ;
+
+}
+
+li {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+}
+
 .center{
-    grid-column: span 12;
-    grid-row: span 3;
-    background-image: url(../img/banner.jpg);
-    align-content: left;
+    grid-column: span 11;
+    grid-row: span 2;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #cca300;
 }
