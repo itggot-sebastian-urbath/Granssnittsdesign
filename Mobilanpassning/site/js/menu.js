@@ -1,7 +1,7 @@
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
+function toggleMenu(){
+    var element = document.querySelector(".menu");
+    element.classList.toggle("show");
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    element = document.querySelector("main");
+    element.classList.toggle("fade")
 }

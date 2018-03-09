@@ -1,3 +1,6 @@
+@media only screen and (max-device-width: 750px){
+
+
 body {
     padding: 0;
     margin: 0;
@@ -10,42 +13,84 @@ body {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
     grid-row-gap:10px;
-    grid-column-gap: 0px;
-    background-color: powderblue;
+    grid-column-gap: 10px;
+    background-color: #FFFACD;
+
 }
 
 .nav {
     grid-column: span 1;
     grid-row: span 12;
-    background-color: beige;
+    background-color: #DCDCDC;
+}
 
+.info {
+    grid-column: span 11 ;
+    grid-row: span 4 ;
+    background-color: black;
+    margin-right: 10px;
 }
 
 .menu {
     width: 40vw;
     height: 100vh;
-    background-color:white ;
+    background-color:#DCDCDC ;
     position: absolute;
-    display: ;
+    display: none ;
 
 }
+
 
 .show {
  display: block;
+ transition-duration: ;
+
 }
 
 li {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, monospace;
     font-size: 20px; 
+}
+
+a {
+    color:  black;
+    text-decoration: none;
+    font-family: Arial, Helvetica, monospace;
+    font-size: 5vw;
+    
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .center{
     grid-column: span 11;
     grid-row: span 2;
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #DCDCDC;
+    font-family: Arial, Helvetica, monospace;
     font-size: 10vw;
     text-align: center;
-    color: #cca300;
-    
+    color: #008B8B;
+
 }
+
+.password  {
+   grid-row: 
+}
+
+.username {
+    grid-row: span 1;
+    grid-column: span 5;
+    align: right;
+
+}
+
+
+.button {
+
+
+}
+
+}
+
