@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 750px){
+@media only screen and (max-device-width: 438px){
 
 
 body {
@@ -26,25 +26,28 @@ body {
 
 .info {
     grid-column: span 11 ;
-    grid-row: span 4 ;
-    background-color: black;
+    grid-row: span 3 ;
     margin-right: 10px;
-}
+    background-image: url("../img/igym.jpg");
+    color: blue;}
 
 .menu {
-    width: 40vw;
+    width: 0;
     height: 100vh;
     background-color:#DCDCDC ;
     position: absolute;
-    display: none ;
+    opacity: 0;
+    transition: 0.4s;
 
 }
 
 
 .show {
  display: block;
- transition-duration: ;
-
+ width: 40vw;
+ transition: 0.4s;
+ opacity:1;
+ 
 }
 
 li {
@@ -88,9 +91,13 @@ a:hover {
 
 
 .button {
+    border-radius: 2px;
 
+}
 
 }
 
-}
+
+
+
 
