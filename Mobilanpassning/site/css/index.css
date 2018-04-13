@@ -12,24 +12,31 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    grid-row-gap:10px;
-    grid-column-gap: 10px;
+    grid-row-gap:;
+    grid-column-gap: ;
     background-color: #FFFACD;
-
 }
 
 .nav {
     grid-column: span 1;
     grid-row: span 12;
     background-color: #DCDCDC;
+    border-bottom-right-radius: 20px;
 }
 
 .info {
-    grid-column: span 11 ;
+    grid-column: span 11;
     grid-row: span 3 ;
-    margin-right: 10px;
     background-image: url("../img/igym.jpg");
-    color: blue;}
+    color:grey;
+    border-bottom-right-radius: 20px;
+}
+
+
+.info1 h1 {
+    grid-column: span 7;
+    grid-row: span 1; 
+}
 
 .menu {
     width: 0;
@@ -38,9 +45,8 @@ body {
     position: absolute;
     opacity: 0;
     transition: 0.4s;
-
+    border-bottom-right-radius: 20px;
 }
-
 
 .show {
  display: block;
@@ -56,11 +62,10 @@ li {
 }
 
 a {
-    color:  black;
+    color:  #F08080;
     text-decoration: none;
     font-family: Arial, Helvetica, monospace;
     font-size: 5vw;
-    
 }
 
 a:hover {
@@ -70,32 +75,39 @@ a:hover {
 .center{
     grid-column: span 11;
     grid-row: span 2;
-    background-color: #DCDCDC;
-    font-family: Arial, Helvetica, monospace;
-    font-size: 10vw;
+    background-image: url("../img/header.jpg");
+
+}
+
+.info1 {
+    display: grid; 
+    grid-column: span 11 ;
+    grid-row: span 3 ;
+    background-image: url("../img/igym.jpg");
+    color: grey;
+    border-bottom-right-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     text-align: center;
-    color: #008B8B;
-
+    border-block-end-color: black;
 }
 
-.password  {
-   grid-row: 
+input {
+    border-radius: 10px;
+    margin-bottom: 4px;
+    margin-top: 1px;
 }
 
-.username {
-    grid-row: span 1;
-    grid-column: span 5;
-    align: right;
-
-}
-
-
-.button {
-    border-radius: 2px;
-
+button{
+    border-radius: 10px;
+    color: #2F4F4F;
+    margin-bottom: 1px;
+    margin-right: 180px;
+    margin-left: 0px;
 }
 
 }
+
 
 
 
